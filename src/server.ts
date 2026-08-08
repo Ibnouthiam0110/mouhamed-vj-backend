@@ -74,9 +74,10 @@ export const AppDataSource = new DataSource({
 // Middleware
 app.use(cors({
   origin: [
-    "http://localhost:5173",              // Frontend public (dev)
-    "http://localhost:5174",              // Admin panel (dev)
-    "https://mouhamed-iota.vercel.app",   // Frontend en production
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "https://vj-sable.vercel.app",
+    "https://mouhamed-iota.vercel.app",
   ],
   credentials: true,
 }));

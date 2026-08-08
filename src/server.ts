@@ -44,6 +44,7 @@ validateSecurityConfig();
 // Import routes
 import publicRoutes from "./routes/public";
 import adminRoutes from "./routes/admin";
+import seedRoutes from "./routes/seed"; // ⚠️ TEMPORAIRE
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -88,6 +89,7 @@ app.use("/uploads", express.static(path.join(__dirname, "../uploads")));
 // Routes
 app.use("/api", publicRoutes);
 app.use("/api/admin", adminRoutes);
+app.use("/api/seed", seedRoutes); // ⚠️ TEMPORAIRE
 
 // Health check
 app.get("/health", (req, res) => {

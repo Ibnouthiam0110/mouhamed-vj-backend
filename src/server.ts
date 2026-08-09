@@ -77,8 +77,8 @@ app.use(cors({
   origin: [
     "http://localhost:5173",
     "http://localhost:5174",
+    "https://vj-mouhamed.vercel.app",
     "https://vj-sable.vercel.app",
-    "https://mouhamed-iota.vercel.app",
   ],
   credentials: true,
 }));
